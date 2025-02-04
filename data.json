@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Lisa Crispin",
+        "website": "https://lisacrispin.com",
+        "websiteText": "lisacrispin.com",
+        "info": "Pioneer in Agile Testing and co-author of \"Agile Testing\"."
+    },
+    {
+        "name": "Janet Gregory",
+        "website": "https://janetgregory.ca",
+        "websiteText": "janetgregory.ca",
+        "info": "Co-author of \"Agile Testing\" and expert in agile quality practices."
+    },
+    {
+        "name": "Angie Jones",
+        "website": "https://angiejones.tech",
+        "websiteText": "angiejones.tech",
+        "info": "Senior Developer Advocate and founder of Test Automation University."
+    }
+]
