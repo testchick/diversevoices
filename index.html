@@ -62,25 +62,29 @@
                     <th>More Information</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
-                    <td>Lisa Crispin</td>
-                    <td><a href="https://lisacrispin.com" target="_blank">lisacrispin.com</a></td>
-                    <td>Pioneer in Agile Testing and co-author of "Agile Testing".</td>
-                </tr>
-                <tr>
-                    <td>Janet Gregory</td>
-                    <td><a href="https://janetgregory.ca" target="_blank">janetgregory.ca</a></td>
-                    <td>Co-author of "Agile Testing" and expert in agile quality practices.</td>
-                </tr>
-                <tr>
-                    <td>Angie Jones</td>
-                    <td><a href="https://angiejones.tech" target="_blank">angiejones.tech</a></td>
-                    <td>Senior Developer Advocate and founder of Test Automation University.</td>
-                </tr>
+            <tbody id="table-body">
+                <!-- Data will be populated here -->
             </tbody>
         </table>
     </div>
+
+    <script>
+        fetch('data.json')
+            .then(response => response.json())
+            .then(data => {
+                const tableBody = document.getElementById('table-body');
+                data.forEach(person => {
+                    const row = `
+                        <tr>
+                            <td>${person.name}</td>
+                            <td><a href="${person.website}" target="_blank">${person.websiteText}</a></td>
+                            <td>${person.info}</td>
+                        </tr>
+                    `;
+                    tableBody.innerHTML += row;
+                });
+            })
+            .catch(error => console.error('Error loading data:', error));
+    </script>
 </body>
 </html>
-
