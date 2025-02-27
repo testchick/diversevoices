@@ -38,6 +38,7 @@
         th {
             background-color: #4a4a8a;
             color: #ffffff;
+            cursor: pointer;
         }
         tr:nth-child(even) {
             background-color: #f9f9f9;
@@ -57,10 +58,10 @@
         <table>
             <thead>
                 <tr>
-                    <th>Name</th>
-                    <th>Conference Speaker</th>
-                    <th>Keynote Speaker</th>
-                    <th>More Information</th>
+                    <th onclick="sortTable(0)">Name</th>
+                    <th onclick="sortTable(1)">Conference Speaker</th>
+                    <th onclick="sortTable(2)">Keynote Speaker</th>
+                    <th>Areas of Expertise</th>
                 </tr>
             </thead>
             <tbody id="table-body">
@@ -70,23 +71,41 @@
     </div>
 
     <script>
+        let data = [];
+
         fetch('data.json')
             .then(response => response.json())
-            .then(data => {
-                const tableBody = document.getElementById('table-body');
-                data.forEach(person => {
-                    const row = `
-                        <tr>
-                            <td><a href="${person.website}" target="_blank">${person.name}</a></td>
-                            <td>${person.conferenceSpeaker}</td>
-                            <td>${person.keynoteSpeaker}</td>
-                            <td>${person.info}</td>
-                        </tr>
-                    `;
-                    tableBody.innerHTML += row;
-                });
+            .then(jsonData => {
+                data = jsonData;
+                populateTable();
             })
             .catch(error => console.error('Error loading data:', error));
+
+        function populateTable() {
+            const tableBody = document.getElementById('table-body');
+            tableBody.innerHTML = '';
+            data.forEach(person => {
+                const row = `
+                    <tr>
+                        <td><a href="${person.website}" target="_blank">${person.name}</a></td>
+                        <td>${person.conferenceSpeaker}</td>
+                        <td>${person.keynoteSpeaker}</td>
+                        <td>${person.info}</td>
+                    </tr>
+                `;
+                tableBody.innerHTML += row;
+            });
+        }
+
+        function sortTable(columnIndex) {
+            const isNumeric = columnIndex > 0;
+            data.sort((a, b) => {
+                let valueA = Object.values(a)[columnIndex].toString().toLowerCase();
+                let valueB = Object.values(b)[columnIndex].toString().toLowerCase();
+                return isNumeric ? (parseInt(valueA) - parseInt(valueB)) : valueA.localeCompare(valueB);
+            });
+            populateTable();
+        }
     </script>
 </body>
 </html>
