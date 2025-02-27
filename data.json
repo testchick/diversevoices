@@ -23,4 +23,12 @@
         "conferenceSpeaker": "Yes",
         "keynoteSpeaker": "Yes"
     }
+    {
+        "name": "Alessandra Moreira",
+        "website": "https://www.alessandramoreira.com",
+        "websiteText": "alessandramoreira.com",
+        "info": "Director of Quality Engineering, Engineering Quality Podcast co-host, startup advisor and testing consultant.",
+        "conferenceSpeaker": "Yes",
+        "keynoteSpeaker": "No"
+    }
 ]
