@@ -23,7 +23,12 @@
         h1 {
             text-align: center;
             color: #4a4a8a;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
+        }
+        p {
+            text-align: center;
+            font-size: 16px;
+            color: #555;
         }
         table {
             width: 100%;
@@ -55,12 +60,14 @@
 <body>
     <div class="container">
         <h1>Diverse Voices in Testing</h1>
+        <p>Explore a curated list of speakers in software testing and quality engineering. Click on "Name", "Conference Speaker", or "Keynote Speaker" to sort the table.</p>
         <table>
             <thead>
                 <tr>
-                    <th onclick="sortTable(0)">Name</th>
-                    <th onclick="sortTable(1)">Conference Speaker</th>
-                    <th onclick="sortTable(2)">Keynote Speaker</th>
+                    <th onclick="sortTable(0)">#</th>
+                    <th onclick="sortTable(1)">Name</th>
+                    <th onclick="sortTable(2)">Conference Speaker</th>
+                    <th onclick="sortTable(3)">Keynote Speaker</th>
                     <th>Areas of Expertise</th>
                 </tr>
             </thead>
@@ -84,9 +91,10 @@
         function populateTable() {
             const tableBody = document.getElementById('table-body');
             tableBody.innerHTML = '';
-            data.forEach(person => {
+            data.forEach((person, index) => {
                 const row = `
                     <tr>
+                        <td>${index + 1}</td>
                         <td><a href="${person.website}" target="_blank">${person.name}</a></td>
                         <td>${person.conferenceSpeaker}</td>
                         <td>${person.keynoteSpeaker}</td>
@@ -98,10 +106,10 @@
         }
 
         function sortTable(columnIndex) {
-            const isNumeric = columnIndex > 0;
+            const isNumeric = columnIndex > 1;
             data.sort((a, b) => {
-                let valueA = Object.values(a)[columnIndex].toString().toLowerCase();
-                let valueB = Object.values(b)[columnIndex].toString().toLowerCase();
+                let valueA = Object.values(a)[columnIndex - 1].toString().toLowerCase();
+                let valueB = Object.values(b)[columnIndex - 1].toString().toLowerCase();
                 return isNumeric ? (parseInt(valueA) - parseInt(valueB)) : valueA.localeCompare(valueB);
             });
             populateTable();
