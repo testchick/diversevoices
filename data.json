@@ -29,6 +29,30 @@
         "websiteText": "alessandramoreira.com",
         "info": "Director of Quality Engineering, Engineering Quality Podcast co-host, startup advisor and testing consultant.",
         "conferenceSpeaker": "Yes",
-        "keynoteSpeaker": "No"
+        "keynoteSpeaker": "Not yet"
+    },
+    {
+        "name": "Maaret Pyhäjärvi",
+        "website": "https://visible-quality.blogspot.com/",
+        "websiteText": "visible-quality.blogspot.com",
+        "info": "",
+        "conferenceSpeaker": "Yes",
+        "keynoteSpeaker": "Yes"
+    },
+    {
+        "name": "Lena Pejgan Nyström",
+        "website": "https://testing.pejgan.se/",
+        "websiteText": "testing.pejgan.se",
+        "info": "",
+        "conferenceSpeaker": "Yes",
+        "keynoteSpeaker": "Yes"
+     },
+    {
+        "name": "Judy Mosley",
+        "website": "https://failureisfeedback.beehiiv.com/",
+        "websiteText": "failureisfeedback.beehiiv.com",
+        "info": "",
+        "conferenceSpeaker": "",
+        "keynoteSpeaker": ""
     }
 ]
