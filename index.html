@@ -16,7 +16,7 @@
             width: 80%;
             margin: 50px auto;
             background-color: #ffffff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
             padding: 20px;
             border-radius: 10px;
         }
@@ -29,6 +29,13 @@
             text-align: center;
             font-size: 16px;
             color: #555;
+        }
+        #search {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
         }
         table {
             width: 100%;
@@ -61,9 +68,12 @@
     <div class="container">
         <h1>Diverse Voices in Testing</h1>
         <p>Explore a curated list of speakers in software testing and quality engineering, authored by individuals from historically underrepresented gender identities, including but not limited to women, non-binary, transgender, and genderqueer.</p> 
-        <p>Click on "Name", "Conference Speaker", or "Keynote Speaker" to sort the table.</p>
+        <p>Click on "Name", "Conference Speaker", "Keynote Speaker", or "Location" to sort the table.</p>
         <p>To collaborate to the list go to <a href="https://github.com/testchick/diversevoices">source</a>.</p>
-         
+        
+        <!-- Search Box -->
+        <input type="text" id="search" onkeyup="filterTable()" placeholder="Search by Location...">
+
         <table>
             <thead>
                 <tr>
@@ -72,6 +82,7 @@
                     <th onclick="sortTable(2)">Conference Speaker</th>
                     <th onclick="sortTable(3)">Keynote Speaker</th>
                     <th>Areas of Expertise</th>
+                    <th onclick="sortTable(5)">Location</th>
                 </tr>
             </thead>
             <tbody id="table-body">
@@ -102,6 +113,7 @@
                         <td>${person.conferenceSpeaker}</td>
                         <td>${person.keynoteSpeaker}</td>
                         <td>${person.info}</td>
+                        <td>${person.location}</td>
                     </tr>
                 `;
                 tableBody.innerHTML += row;
@@ -116,6 +128,28 @@
                 return isNumeric ? (parseInt(valueA) - parseInt(valueB)) : valueA.localeCompare(valueB);
             });
             populateTable();
+        }
+
+        function filterTable() {
+            let input = document.getElementById("search").value.toLowerCase();
+            let tableBody = document.getElementById("table-body");
+            tableBody.innerHTML = '';
+
+            data.forEach((person, index) => {
+                if (person.location.toLowerCase().includes(input)) {
+                    const row = `
+                        <tr>
+                            <td>${index + 1}</td>
+                            <td><a href="${person.website}" target="_blank">${person.name}</a></td>
+                            <td>${person.conferenceSpeaker}</td>
+                            <td>${person.keynoteSpeaker}</td>
+                            <td>${person.info}</td>
+                            <td>${person.location}</td>
+                        </tr>
+                    `;
+                    tableBody.innerHTML += row;
+                }
+            });
         }
     </script>
 </body>
