@@ -5,6 +5,7 @@
         "websiteText": "lisacrispin.com",
         "info": "Pioneer in Agile Testing and co-author of \"Agile Testing\".",
         "conferenceSpeaker": "Yes",
+        "Location": "USA",
         "keynoteSpeaker": "Yes"
     },
     {
@@ -13,6 +14,7 @@
         "websiteText": "janetgregory.ca",
         "info": "Co-author of \"Agile Testing\" and expert in agile quality practices.",
         "conferenceSpeaker": "Yes",
+        "Location": "USA",
         "keynoteSpeaker": "Yes"
     },
     {
@@ -21,6 +23,7 @@
         "websiteText": "angiejones.tech",
         "info": "Senior Developer Advocate and founder of Test Automation University.",
         "conferenceSpeaker": "Yes",
+        "Location": "USA",
         "keynoteSpeaker": "Yes"
     },
     {
@@ -29,6 +32,7 @@
         "websiteText": "alessandramoreira.com",
         "info": "Director of Quality Engineering, Engineering Quality Podcast co-host, startup advisor and testing consultant.",
         "conferenceSpeaker": "Yes",
+        "Location": "USA",
         "keynoteSpeaker": "Not yet"
     },
     {
@@ -37,6 +41,7 @@
         "websiteText": "visible-quality.blogspot.com",
         "info": "A feedback fairy. Principal Test Engineer. Polyglot Programmer. Tester. Conference Designer. Community Facilitator. Author.",
         "conferenceSpeaker": "Yes",
+        "Location": "TBA",
         "keynoteSpeaker": "Yes"
     },
     {
@@ -45,6 +50,7 @@
         "websiteText": "testing.pejgan.se",
         "info": "Author, Senior Leader and Keynote Speaker.",
         "conferenceSpeaker": "Yes",
+        "Location": "TBA",
         "keynoteSpeaker": "Yes"
      },
     {
@@ -53,6 +59,7 @@
         "websiteText": "failureisfeedback.beehiiv.com",
         "info": "tba",
         "conferenceSpeaker": "tba",
+        "Location": "USA",
         "keynoteSpeaker": "tba"
      },
     {
@@ -61,6 +68,7 @@
         "websiteText": "fishouthebox.medium.com",
         "info": "tba",
         "conferenceSpeaker": "tba",
+        "Location": "USA",
         "keynoteSpeaker": "tba"
      },
     {
@@ -69,6 +77,7 @@
         "websiteText": "www.lisihocke.com",
         "info": "Security engineer, holistic tester, quality enabler, agile experimenter, sociotechnical symmathecist, team glue",
         "conferenceSpeaker": "Yes",
+        "Location": "USA",
         "keynoteSpeaker": "Yes"
      },
     {
@@ -77,6 +86,7 @@
         "websiteText": "annemariecharrett.com",
         "info": "Anne-Marie excels at creating spaces where quality thrives. She is the lead advocate on quality engineering and how to navigate change.",
         "conferenceSpeaker": "Yes",
+        "Location": "Australia",
         "keynoteSpeaker": "Yes"
     },
     {
@@ -85,6 +95,7 @@
         "websiteText": "elizabethzagroba.com/",
         "info": "TBA",
         "conferenceSpeaker": "Yes",
+        "Location": "TBA",
         "keynoteSpeaker": "Yes"
     }
 ]
