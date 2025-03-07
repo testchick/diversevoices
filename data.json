@@ -5,8 +5,8 @@
         "websiteText": "lisacrispin.com",
         "info": "Pioneer in Agile Testing and co-author of \"Agile Testing\".",
         "conferenceSpeaker": "Yes",
-        "location": "USA",
-        "keynoteSpeaker": "Yes"
+        "keynoteSpeaker": "Yes",
+        "location": "USA"
     },
     {
         "name": "Janet Gregory",
@@ -14,8 +14,9 @@
         "websiteText": "janetgregory.ca",
         "info": "Co-author of \"Agile Testing\" and expert in agile quality practices.",
         "conferenceSpeaker": "Yes",
-        "location": "USA",
-        "keynoteSpeaker": "Yes"
+        "keynoteSpeaker": "Yes",
+        "location": "USA"
+
     },
     {
         "name": "Angie Jones",
@@ -23,8 +24,9 @@
         "websiteText": "angiejones.tech",
         "info": "Senior Developer Advocate and founder of Test Automation University.",
         "conferenceSpeaker": "Yes",
-        "location": "USA",
-        "keynoteSpeaker": "Yes"
+        "keynoteSpeaker": "Yes",
+        "location": "USA"
+
     },
     {
         "name": "Alessandra Moreira",
@@ -32,8 +34,9 @@
         "websiteText": "alessandramoreira.com",
         "info": "Director of Quality Engineering, Engineering Quality Podcast co-host, startup advisor and testing consultant.",
         "conferenceSpeaker": "Yes",
-        "location": "USA",
-        "keynoteSpeaker": "Not yet"
+        "keynoteSpeaker": "Not yet",
+        "location": "USA"
+
     },
     {
         "name": "Maaret Pyhäjärvi",
@@ -41,8 +44,8 @@
         "websiteText": "visible-quality.blogspot.com",
         "info": "A feedback fairy. Principal Test Engineer. Polyglot Programmer. Tester. Conference Designer. Community Facilitator. Author.",
         "conferenceSpeaker": "Yes",
-        "location": "TBA",
-        "keynoteSpeaker": "Yes"
+        "keynoteSpeaker": "Yes",
+        "location": "TBA"
     },
     {
         "name": "Lena Pejgan Nyström",
@@ -50,8 +53,8 @@
         "websiteText": "testing.pejgan.se",
         "info": "Author, Senior Leader and Keynote Speaker.",
         "conferenceSpeaker": "Yes",
-        "location": "TBA",
-        "keynoteSpeaker": "Yes"
+        "keynoteSpeaker": "Yes",
+        "location": "TBA"
      },
     {
         "name": "Judy Mosley",
@@ -59,8 +62,8 @@
         "websiteText": "failureisfeedback.beehiiv.com",
         "info": "tba",
         "conferenceSpeaker": "tba",
-        "location": "USA",
-        "keynoteSpeaker": "tba"
+        "keynoteSpeaker": "tba",
+        "location": "USA"
      },
     {
         "name": "Melissa Fisher",
@@ -68,8 +71,8 @@
         "websiteText": "fishouthebox.medium.com",
         "info": "tba",
         "conferenceSpeaker": "tba",
-        "location": "USA",
-        "keynoteSpeaker": "tba"
+        "keynoteSpeaker": "tba",
+        "location": "USA"
      },
     {
         "name": "Lisa Hocke",
@@ -77,8 +80,8 @@
         "websiteText": "www.lisihocke.com",
         "info": "Security engineer, holistic tester, quality enabler, agile experimenter, sociotechnical symmathecist, team glue",
         "conferenceSpeaker": "Yes",
-        "location": "USA",
-        "keynoteSpeaker": "Yes"
+        "keynoteSpeaker": "Yes",
+        "location": "USA"
      },
     {
         "name": "Anne-Marie Charrett",
@@ -86,8 +89,8 @@
         "websiteText": "annemariecharrett.com",
         "info": "Anne-Marie excels at creating spaces where quality thrives. She is the lead advocate on quality engineering and how to navigate change.",
         "conferenceSpeaker": "Yes",
-        "location": "Australia",
-        "keynoteSpeaker": "Yes"
+        "keynoteSpeaker": "Yes",
+        "location": "Australia"
     },
     {
         "name": "Elizabeth Zagroba",
@@ -95,7 +98,7 @@
         "websiteText": "elizabethzagroba.com/",
         "info": "TBA",
         "conferenceSpeaker": "Yes",
-        "location": "TBA",
-        "keynoteSpeaker": "Yes"
+        "keynoteSpeaker": "Yes",
+        "location": "TBA"
     }
 ]
